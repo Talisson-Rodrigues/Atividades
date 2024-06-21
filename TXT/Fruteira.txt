@@ -1,0 +1,41 @@
+let morangos = parseInt(prompt("Digite a quantidade (em Kg) de morangos: "));
+let macas = parseInt(prompt("Digite a quantidade (em Kg) de maçãs: "));
+const DESCONTO = 10;
+const PRECO_MORANGO_MENOR_5 = 2.50;
+const PRECO_MORANGO_MAIOR_5 = 2.20;
+const PRECO_MACA_MENOR_5 = 1.80;
+const PRECO_MACA_MAIOR_5 = 1.50;
+let valorMorango = 0;
+let valorMaca = 0;
+let resultado = "";
+let desconto = 0;
+
+if (morangos <= 5) {
+    valorMorango = morangos * PRECO_MORANGO_MENOR_5;
+    resultado = "Valor a pagar (Morango): R$ " + valorMorango; 
+} else if (morangos > 5) {
+    valorMorango = morangos * PRECO_MORANGO_MAIOR_5;
+    resultado = "Valor a pagar (Morango): R$ " + valorMorango;
+
+    if (morangos > 8 || valorMorango > 25) {
+        desconto = (valorMorango * DESCONTO) / 100;
+        valorMorango = valorMorango - desconto;
+    }
+    resultado = "Valor a pagar (morango): R$ " + valorMorango.toFixed(2);
+}
+alert("KG do Morango: " + morangos + "\n" + resultado)
+
+if (macas <= 5) {
+    valorMaca =  macas * PRECO_MACA_MENOR_5;
+    resultado = "Valor a pagar (Maçãs): R$ " + valorMaca;
+} else if (macas > 5) {
+    valorMaca = macas * PRECO_MACA_MAIOR_5;
+    resultado = "Valor a pagar (Maçãs): R$ " + valorMaca;
+
+    if (macas > 8 || valorMaca > 25) {
+        desconto = (valorMaca * DESCONTO) / 100;
+        valorMaca = valorMaca - desconto;
+    }
+    resultado = "Valor a pagar (Maçãs): R$ " + valorMaca.toFixed(2);
+}
+alert("KG da Maçã: " + macas + "\n" + resultado);

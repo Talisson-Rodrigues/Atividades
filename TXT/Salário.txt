@@ -1,0 +1,15 @@
+let salarioFixo = parseInt(prompt("Digite seu salário: "));
+let vendasFeitas = parseInt(prompt("Digite o valor total das vendas você fez: "));
+const LIMITE_COMISSAO = 1500;
+let salarioTotal = 0;
+
+if (vendasFeitas <= LIMITE_COMISSAO) {
+    let comissãoFixa = (vendasFeitas * 3) / 100;
+    salarioTotal = comissãoFixa + salarioFixo;
+} else {
+    let aMais = vendasFeitas - 1500;
+    let comissão = (aMais * 5) / 100;
+    salarioTotal = salarioFixo + (LIMITE_COMISSAO * 3) / 100 + comissão;
+}
+
+alert("Salário fixo: R$ " + salarioFixo + "\n" + "Vendas feitas: R$ " + vendasFeitas + "\n" + "Salário total: R$ " + salarioTotal);

@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.valores {
+    border: 1px solid black;
+    margin: 250px 800px;
+    padding: 10px;
+}
+
+#valor1, #valor2 {
+    width: 200px;
+    height: 25px;
+    border: 2px double rgb(0, 0, 43);
+    border-radius: 3px;
+}
+
+#resultado {
+    border:2px solid black;
+    width: 260px;
+    height: 25px;
+    padding: 10px;
+}
+
+.enviar {
+    width: 70px;
+    height: 25px;
+    background-color: black;
+    color: white;
+}

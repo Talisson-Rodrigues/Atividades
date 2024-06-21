@@ -1,0 +1,18 @@
+let soma1 = 0;
+let soma2 = 0;
+let soma3 = 0;
+
+for (let index = 1; index <= 15; index++) {
+    let num = parseInt(prompt("Digite 15 números: "));
+    if (index <= 5) {
+        soma1 += num;
+    } else if (index <=10) {
+        soma2 += num;
+    } else {
+        soma3 += num;
+    }
+}
+alert(
+    "A soma dos 5 primeiros números é: " + soma1 + "\n" +
+    "A soma do 6 ao 10 numero é: " + soma2 + "\n" +
+    "A soma do 11 ao 15 número é: " + soma3 + "\n");

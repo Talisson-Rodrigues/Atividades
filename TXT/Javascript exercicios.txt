@@ -1,0 +1,9 @@
+let numero = parseInt(prompt("Informe o número: "));
+let mensagem = "";
+
+for (let index = 1; index < 20; index++) {
+    numero++;
+    mensagem = mensagem + numero + "\n"
+}
+
+alert(mensagem);

@@ -1,0 +1,24 @@
+let somatorio = 0;
+let qtNumeros = 0;
+let media = 0;
+let numerosInformados = "";
+
+for (;;) {
+   let num = parseInt(prompt("Digite um número inteiro: "));
+   if (num < 0) {
+        break;
+    }
+    qtNumeros++;
+    somatorio += num;
+    numerosInformados = numerosInformados + num + ", "; 
+}
+
+media = somatorio/qtNumeros;
+
+
+alert(
+    "Quantidade de números digitados: " + qtNumeros + "\n" +
+    "Somatório dos números digitados: " + somatorio + "\n" +
+    "Média aritmética dos números digitados: " + media.toFixed(2) + "\n" +
+    "Numero informados: " + numerosInformados
+    );

@@ -1,0 +1,40 @@
+body {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    border: 2px solid black;
+    margin: 300px 800px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+label {
+    margin: 5px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+}
+
+.enviar {
+    width: 55px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    font-size: 16px;
+}

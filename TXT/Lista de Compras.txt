@@ -1,0 +1,28 @@
+let listaCompras = [];
+let precoProdutos = [];
+let qtdProduto = [];
+let totalProduto = [];
+let resultado = "";
+let totalCompra = 0;
+
+//Solicita os itens da lista de compras
+for (let index = 1; index <= 2; index++) {
+    let produto = prompt ("Informe o produto: ");
+    listaCompras.push(produto);
+    let preco = parseInt(prompt("Informe o preço do " + produto + ": "));
+    precoProdutos.push(preco);
+    let qtd = parseInt(prompt("Digite na quantidade comprada do " + produto + ": "));
+    qtdProduto.push(qtd);
+    let subtotal = (preco * qtd);
+    totalProduto.push(subtotal);
+    totalCompra += subtotal;
+}
+
+//formata a informação para apresentar na tela
+for (let index = 0; index < 2; index++) {
+    resultado = 
+    resultado + (index+1) + " - " + listaCompras[index] + " - R$ " + precoProdutos[index] + " - Qtd. (" + qtdProduto[index] + ") - Subtotal: R$ " + totalProduto[index] + "<br>";
+}
+resultado += "<br>O valor total da Compra: R$ " + totalCompra;
+
+document.getElementById("resultado").innerHTML = resultado;

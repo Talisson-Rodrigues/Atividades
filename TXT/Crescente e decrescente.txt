@@ -1,0 +1,14 @@
+let crescente = "";
+let decrescente = "";
+
+
+for (let i = 1; i <= 10; i++) {
+    crescente = crescente + i + " ";
+}
+for (let index = 10; index >= 1; index--) {
+    decrescente = decrescente + index + " ";
+}
+
+alert(
+    "Em ordem crescente: " + crescente + "\n" +
+"Em ordem decrescente: " + decrescente);

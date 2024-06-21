@@ -1,0 +1,8 @@
+let tabuada = parseInt(prompt("digite um número: "));
+let resultado = "";
+
+for (let index = 1; index <= 10; index++) {
+    resultado += tabuada + " x " + index + " = " + (tabuada * index) + "\n";  
+}
+
+alert("Tabuada: " + "\n" + resultado);

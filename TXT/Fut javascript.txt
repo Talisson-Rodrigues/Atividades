@@ -1,0 +1,20 @@
+let time1 = prompt("Digite o time 1: ");
+var golTime1 = prompt("Digite o numero de gols do time 1: ");
+
+while(golTime1 !== parseInt(golTime1).toString()) {
+    golTime1 = prompt("Digite apenas números. Digite o numero de gols do time 1: ");    
+}
+let time2 = prompt("Digite o time 2: ");
+var golTime2 = prompt("Digite o número de gols do time 2: ")
+
+while(golTime2 !== parseInt(golTime2).toString()) {
+    golTime2 = prompt("Digite apenas números. Digite o número de gols do time 2: ")
+}
+
+if (golTime1 > golTime2) {
+    alert("O vencedor é: " + time1 + "\n" + "Gols: " + golTime1);
+} else if (golTime2 > golTime1) {
+    alert("O vencedor é: " + time2 + "\n" + "Gols: " + golTime2);
+} else {
+    alert("Time 1: " + time1 + "\n"  + " Gols: " + golTime1 + "\n" + "\n" + "Time 2: " + time2 + "\n" + " Gols: " + golTime2 + "\n" + "\n" + "O resultado é: Empate")
+}
