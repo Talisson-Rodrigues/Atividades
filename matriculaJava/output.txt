@@ -1,6 +1,0 @@
-Nome: Carlos
-Idade: 15
-Email: carlos@gamil.com
-Sexo: M
-Matricula: 123456
-Curso: Geografia
